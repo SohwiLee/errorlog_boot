@@ -1,0 +1,26 @@
+.feed-wrap{
+    padding:50px 0;
+    display:flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    place-content: center;
+    background:#fcfcfc;
+}
+
+.feed{
+    width: 320px;
+    /*border: 1px solid #888;*/
+    box-shadow: rgb(0 0 0 / 4%) 0px 4px 16px 0px;
+}
+.feed span{padding:5px 10px;}
+.feed .img{height:130px; display:block; padding:0; background:lightblue;}
+.feed .title{display:block; font-size:1.125em; font-weight: bold;}
+.feed .content{display: -webkit-box;
+    word-wrap: break-word;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    height: 70px;}
+.feed .writer{float:left;}
+.feed .likes{float:right;}

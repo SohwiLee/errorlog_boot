@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Gowun+Dodum&family=Roboto+Mono:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500;1,600&display=swap');
+
+*{margin:0;padding:0; font-family: 'Gowun Dodum', 'Roboto Mono', sans-serif; }
+li{list-style: none;}
+
+/* header style */
+.header{width:100%; padding:10px 0; background: linear-gradient(to right, #F8FFAE, #43C6AC); display: flex; justify-content: space-between; align-items: center;}
+.header h1{margin-left:20px; }
+.header .userInfo{margin-right:20px; display: flex; gap:10px;}
+
+/* button style*/
+button, input[type=button], input[type=submit]{background:white; border:1px solid #eee; padding:8px 10px;cursor:pointer;}
+
+/* textbox style */
+input[type=text], input[type=password], textarea{padding:8px; border:1px solid #eee; }
+label{padding:8px;}
