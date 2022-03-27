@@ -23,6 +23,7 @@ id: ${log}<br>
 
 <a href="/goWriteFeed">글쓰기</a>
 <a href="/goAllFeed">모든 피드보기</a>
+<a href="/chatJm">채팅</a>
 
 <button onclick="location.href='goTetris'">테트리스</button>
 
