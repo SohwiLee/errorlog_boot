@@ -26,13 +26,31 @@ public class MainController {
         return "main";
     }
 
-////    @GetMapping("/goTest") // 마크다운 테스트용
-////    public String goTest(){
-////        return "user/test";
-////    }
-//
-//
-//    @GetMapping("/goWriteFeed")
+// -------- 유저 관리(수민) --------
+    @PostMapping("/goLogin")
+    public String goLogin(HttpServletRequest request, HttpServletResponse response) throws IOException {
+        return userController.checkLogin(request, response);
+    }
+
+    @GetMapping("/goJoin")
+    public String goJoin() {
+        return "user/join";
+    }
+
+// ------ 테트리스 ------
+    @GetMapping("/goTetris")
+    public String goTetris() {
+        return "game/tetris";
+    }
+
+// ------- 마크다운 ------
+    @GetMapping("/goMarkdown")
+    public String goMarkdown(){
+        return "user/markdown";
+    }
+
+    // ------ 피드 --------
+    //    @GetMapping("/goWriteFeed")
 //    public String goWriteFeed() {
 //        return "feed/write";
 //    }
@@ -46,25 +64,6 @@ public class MainController {
 //    public String goFeed(Model model, @PathVariable int no){
 //        model.addAttribute("no",no);
 //        return "feed/Feed";
-//    }
-//
-//    @GetMapping("/goJoin")
-//    public String goJoin() {
-//        return "user/join";
-//    }
-//
-//    @GetMapping("/goTetris")
-//    public String goTetris() {
-//        return "game/tetris";
-//    }
-//
-    @PostMapping("/goLogin")
-    public String goLogin(HttpServletRequest request, HttpServletResponse response) throws IOException {
-        return userController.checkLogin(request, response);
-    }
-//    @GetMapping("/goMarkdown")
-//    public String goMarkdown(){
-//        return "user/markdown";
 //    }
 //
 //    @GetMapping("/all-members")
